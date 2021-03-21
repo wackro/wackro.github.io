@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>jgriff.in</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			html,
+			body {
+			  height: 100%;
+			  margin: 0;
+			}
+			
+			#main {
+				height: 100%;
+			}
+
+			.flex {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.sky {
+				height: 100%;			}
+			
+			#skyblue {
+				background-color: #88a0b8;
+				height: 20%;
+			}
+
+			#skytop {
+				background: url(skytiletop.png) repeat;
+				height: 92px;
+			}
+
+			#sky {
+				background: url(skytile.png) repeat;
+				height: calc(100% - 20% - 92px);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<div class="flex sky">
+				<div id="skyblue"></div>
+				<div id="skytop"></div>
+				<div id="sky"></div>
+			</div>
+		</div>
+	</body>
+</html>
